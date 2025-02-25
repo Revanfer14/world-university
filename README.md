@@ -62,3 +62,5 @@ Berisi informasi tentang WorldUniversity, visi dan misi, serta tim pengembang pl
   npm run dev
 ```
 
+## You can access it directly here!
+https://worlduniversity-zeta.vercel.app/
