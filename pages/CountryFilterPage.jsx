@@ -45,9 +45,10 @@ const CountrySearchFilterPage = () => {
               onChange={(e) => setSearchTerm(e.target.value)}
               className="border p-4 mb-6 md:mb-0 flex-1 rounded-md shadow-sm text-lg"
             />
+
             <select
               onChange={(e) => setContinent(e.target.value)}
-              className="border p-4 mb-6 md:mb-0 flex-1 rounded-md shadow-sm text-lg"
+              className="border p-2 mb-6 md:mb-0 flex-1 rounded-md shadow-sm text-lg"
             >
               <option value="">Select Continent</option>
               <option value="Africa">Africa</option>
@@ -56,6 +57,7 @@ const CountrySearchFilterPage = () => {
               <option value="Europe">Europe</option>
               <option value="Oceania">Oceania</option>
             </select>
+
             <select
               onChange={(e) => setLanguage(e.target.value)}
               className="border p-4 mb-6 md:mb-0 flex-1 rounded-md shadow-sm text-lg"
@@ -65,6 +67,7 @@ const CountrySearchFilterPage = () => {
               <option value="Spanish">Spanish</option>
               <option value="French">French</option>
             </select>
+
             <select
               onChange={(e) => setIsIndependent(e.target.value)}
               className="border p-4 flex-1 rounded-md shadow-sm text-lg"
