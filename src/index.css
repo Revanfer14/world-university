@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@theme {
+  --font-primary: "Afacad Flux", serif;
+  --color-primary: #101829;
+  --color-secondary: #fcfcfc;
+}
