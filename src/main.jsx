@@ -8,7 +8,7 @@ import CountryDetailPage from "../pages/CountryDetailPage";
 import CountryFilterPage from "../pages/CountryFilterPage";
 import AboutPage from "../pages/AboutPage";
 import Navbar from "../components/Navbar";
-
+import Footer from "../components/Footer";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <CountryProvider>
@@ -20,6 +20,7 @@ createRoot(document.getElementById("root")).render(
           <Route path="/filter" element={<CountryFilterPage />} />
           <Route path="/about" element={<AboutPage />} />
         </Routes>
+        <Footer />
       </Router>
     </CountryProvider>
   </StrictMode>

@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import countries from "../data/countries";
-import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 const HomePage = () => {
@@ -36,14 +35,14 @@ const HomePage = () => {
     <div className="bg-gray-100 pt-1">
       <div className="container mx-auto my-6 text-center p-5">
         <motion.h1
-          className="text-5xl font-bold"
+          className="text-3xl md:text-4xl lg:text-5xl font-bold"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
           {text} to WorldUniversity
         </motion.h1>
-        <p className="text-lg mt-3 max-w-2xl mx-auto">
+        <p className="text-base md:text-lg mt-3 max-w-2xl mx-auto">
           WorldUniversity is your gateway to learning about the nations of the
           world. With our platform, you can explore comprehensive details about
           different countries, including their geography, culture, economy, and
@@ -53,7 +52,7 @@ const HomePage = () => {
 
         <section className="mt-8">
           <h2 className="text-4xl font-bold font-primary">Popular Countries</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-5">
             {countries.map((country, index) => (
               <div
                 key={index}
@@ -74,7 +73,6 @@ const HomePage = () => {
           </div>
         </section>
       </div>
-      <Footer background="bg-gray-100" />
     </div>
   );
 };

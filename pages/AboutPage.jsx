@@ -1,5 +1,3 @@
-import Footer from "../components/Footer";
-
 const AboutPage = () => {
   return (
     <>
@@ -93,7 +91,6 @@ const AboutPage = () => {
           </ul>
         </div>
       </div>
-      <Footer background="bg-gray-100" />
     </>
   );
 };
