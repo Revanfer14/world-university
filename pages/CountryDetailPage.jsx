@@ -46,7 +46,7 @@ const CountryDetailPage = () => {
       <div className="flex-wrap mt-5 mb-5 sm:mb-20 md:mt-44 sm:mt-10 flex justify-center items-center md:flex-row">
         <div className="w-3/4 md:w-full max-w-6xl flex flex-col md:flex-row gap-6">
           {/* Country Info Card */}
-          <div className="bg-white rounded-xl p-6 sm:p-5 w-full md:w-1/2  shadow-md border border-gray-200">
+          <div className="bg-white rounded-xl p-6 sm:p-5 w-full md:w-1/2 shadow-md border border-gray-200">
             <div className="w-full text-left mb-4">
               <Link
                 to="/filter"
@@ -123,7 +123,7 @@ const CountryDetailPage = () => {
           </div>
 
           {/* Google Maps Card */}
-          <div className="bg-white rounded-xl p-6 w-full md:w-1/2 shadow-md border border-gray-200">
+          <div className="bg-white rounded-xl p-6 w-full md:w-1/2 shadow-md border border-gray-200 z-0 relative">
             <h2 className="text-2xl font-bold mb-3 text-gray-900">Location</h2>
             <div className="w-full h-64 sm:h-80">
               <CountryMap

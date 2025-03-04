@@ -32,7 +32,7 @@ const HomePage = () => {
   }, [charIndex, isDeleting, index]);
 
   return (
-    <div className="bg-gray-100 pt-1">
+    <div className="bg-gray-100 pt-1 font-primary">
       <div className="container mx-auto my-6 text-center p-5">
         <motion.h1
           className="text-3xl md:text-4xl lg:text-5xl font-bold"
