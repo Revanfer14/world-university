@@ -40,7 +40,7 @@ const HomePage = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          {text} to WorldUniversity
+          {text} to WorldUniversity!
         </motion.h1>
         <p className="text-base md:text-lg mt-3 max-w-2xl mx-auto">
           WorldUniversity is your gateway to learning about the nations of the
