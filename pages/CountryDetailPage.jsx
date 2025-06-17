@@ -18,8 +18,11 @@ const CountryDetailPage = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    axios;
     axios
-      .get(`https://restcountries.com/v3.1/name/${name}`)
+      .get(
+        `https://restcountries.com/v3.1/name/${name}?fullText=true&fields=name,flags,capital,population,area,currencies,languages,region,latlng,maps`
+      )
       .then((response) => {
         setCountry(response.data[0]);
         setLoading(false);
